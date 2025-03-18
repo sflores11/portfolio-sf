@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Impact';
+    src: url(/public/fonts/impact.ttf) format('truetype'),
+         url(/public/fonts/unicode.impact.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Impacted';
+    src: url('/public/fonts/Impacted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
