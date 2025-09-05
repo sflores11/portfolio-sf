@@ -1,16 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import NavBar from "../components/NavBar";
-import { Link } from "react-router-dom";
+import BetterNav from "../components/BetterNav";
 
 export default function About() {
+    const [open, setOpen] = useState(false);
     
     return (
         <>
-            <div className="my-3 mx-8 flex justify-between items-center">
-                <h1 className="font-impact select-none text-[#DFDFDF] leading-none text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[128px]">ABOUT
+            <div className={`my-3 mx-8 flex justify-between items-center ${open ? 'my-5' : ''}`}>
+                <h1 className={`${open ? 'hidden': ''} font-impact select-none text-[#DFDFDF] leading-none text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[128px]`}>ABOUT
                 </h1>
                 <NavBar screen="about"/>
-                
+                <BetterNav open={open} setOpen={setOpen} screen="about"/>
             </div>
             <div className="hidden sm:flex justify-between sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24">
                 <div className="w-2/5 ml-8">

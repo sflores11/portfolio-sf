@@ -1,38 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import NavBar from "../components/NavBar";
 import ProjectCard from "../components/ProjectCard";
-import { Link } from "react-router-dom";
-import MobileNavBar from "../components/MobileNavBar";
+import BetterNav from "../components/BetterNav";
 
 export default function Projects() {
     const [open, setOpen] = useState(false);
-        
-    useEffect(() => {
-        const body = document.body;
-    
-        if (open) {
-            body.classList.add("overflow-hidden");
-    
-            // prevent iOS touch scroll "rubber band"
-            const preventScroll = (e: TouchEvent) => e.preventDefault();
-            document.addEventListener("touchmove", preventScroll, { passive: false });
-    
-            return () => {
-            body.classList.remove("overflow-hidden");
-            document.removeEventListener("touchmove", preventScroll);
-            };
-        } else {
-            body.classList.remove("overflow-hidden");
-        }
-    }, [open]);
 
     return (
         <div className="relative min-h-screen min-w-screen flex flex-col">
-            <div className="my-3 mx-7 flex justify-between items-center">
+            <div className={`my-3 mx-7 flex justify-between items-center ${open ? 'my-5' : ''}`}>
                 <NavBar screen="project"/>
                 <h1
-                    className="font-impact select-none text-[#DFDFDF] leading-none relative inline-block
-                    text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[128px]"
+                    className={`font-impact select-none text-[#DFDFDF] leading-none relative inline-block
+                    text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[128px] ${open ? 'hidden': ''}`}
                 >
                     PROJEC
                     <span className="inline-block align-middle max-xl:hidden">
@@ -52,9 +32,10 @@ export default function Projects() {
                     </span>
                     S
                 </h1>
+                <BetterNav open={open} setOpen={setOpen} screen="projects"/>
             </div>
 
-            <span className="max-xl:hidden absolute   bg-[#DFDFDF] h-full
+            <span className="max-xl:hidden absolute bg-[#DFDFDF] h-full
                 2xl:w-[26.3px] 2xl:right-[114px] 2xl:top-10
                 xl:w-[19.74px] xl:right-[94px] max-2xl:translate-x-[0.5px] xl:top-6
             "></span>
