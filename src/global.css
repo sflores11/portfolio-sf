@@ -12,3 +12,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
+html, body {
+    background-color: #1E293B;
+}
