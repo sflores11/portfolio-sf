@@ -15,8 +15,8 @@ export default function Home () {
                     <BetterNav open={open} setOpen={setOpen} screen="home"/>
                 </nav>
                 <h1 className="sr-only">Sebastian Flores - Software Engineer</h1>
-                <p className="font-arial text-[#DFDFDF] text-[28px] leading-[30px] text-center">
-                    Software Engineer <br/> using code to make <br/> people's lives easier. <br/>
+                <p className="font-arial text-[#DFDFDF] text-[28px] mt-14 leading-[30px] text-center">
+                    software engineer<br /> hopeful architect <br/>aspiring photographer<br/>
                     <Link to="/projects" className="underline">view my projects</Link>
                 </p>
                 <div className="absolute  bottom-0 w-full" aria-hidden="true">
@@ -43,7 +43,7 @@ export default function Home () {
                     <NavBar screen="home"/>
 
                     <p className="font-arial text-[#DFDFDF] text-xl md:text-3xl lg:text-[36px] leading-snug text-right">
-                        Software Engineer <br /> who believes code should <br/> make people's lives easier. <br/> <Link to="/projects" className="underline">view my projects</Link>
+                        software engineer<br /> hopeful architect <br/>aspiring photographer<br/> <Link to="/projects" className="underline">view my projects</Link>
                     </p>
                 </main>
             </div>

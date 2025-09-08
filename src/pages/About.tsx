@@ -22,12 +22,16 @@ export default function About() {
                             About description
                         </h2>
                         <p className="font-arial text-[#DFDFDF] mr-3 sm:text-base md:text-lg lg:text-[22px] xl:text-2xl 2xl:text-3xl text-[32px] leading-snug">
-                        Think about what it is you want out of this. how often can you say you built a website. let alone one that used everyting
+                            I'm fueled by my desire to create lasting solutions that go beyond an immediate fix. This has allowed me to balance business expectations and complex technological requirements to create practical and impactful solutions.
+                            I enjoy building end-to-end full-stack solutions, from database design and backend APIs to intuitive front-end user experiences.
+                            <br/>
+                            <br/>
+                            When I am not developing, you can find me admiring architecture, watching sports, or seeing the world through a viewfinder.
                         </p>
                     </div>
                     <div className="sm:w-[55%] overflow-hidden items-end">
                         <img
-                            className="w-full h-full object-fit object-bottom mix-blend-luminosity"
+                            className="w-full h-full object-cover object-bottom mix-blend-luminosity"
                             src="/images/chicago-skyline.jpg"
                             alt="Chicago skyline at sunrise" 
                         />
@@ -38,7 +42,11 @@ export default function About() {
                 <section className="sm:hidden">
                     <div className="max-w-96 ml-16 my-16 mr-8">
                         <p className="font-arial text-[#DFDFDF] text-2xl leading-snug">
-                            Think about what it is you want out of this. how often can you say you built a website. let alone one that used everyting
+                            I'm fueled by my desire to create lasting solutions that go beyond an immediate fix. This has allowed me to balance business expectations and complex technological requirements to create practical and impactful solutions.
+                            I enjoy building end-to-end full-stack solutions, from database design and backend APIs to intuitive front-end user experiences.
+                            <br/>
+                            <br/>
+                            When I am not developing, you can find me admiring architecture, watching sports, or seeing the world through a viewfinder.
                         </p>
                     </div>
                     <div className="overflow-hidden">
