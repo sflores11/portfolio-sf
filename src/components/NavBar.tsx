@@ -21,7 +21,7 @@ export default function NavBar({
             <Link className="transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100" to="/">home</Link>
             <Link className="transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100" to="/projects">projects</Link>
             <Link className="transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100" to="/about">about</Link>
-            <a className="transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100" href="">resume</a>
+            <a className="transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100" href="/documents/Sebastian_Flores_Resume_25.0.pdf" download="Sebastian_Flores_Resume.pdf">resume</a>
         </nav>
     )
 }

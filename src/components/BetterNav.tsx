@@ -91,7 +91,7 @@ export default function BetterNav ({
                         </Link>
                     </li>
                     <li>
-                        <a href="" onClick={() => toggleOpen(false)}>
+                        <a href="/documents/Sebastian_Flores_Resume_25.0.pdf" download="Sebastian_Flores_Resume.pdf" >
                             resume
                         </a>
                     </li>
