@@ -42,22 +42,19 @@ export default function Projects() {
                 xl:w-[19.74px] xl:right-[94px] max-2xl:translate-x-[0.5px] xl:top-6
             " aria-hidden></span>
 
-            <main 
-                id="main-content"
-                aria-labelledby="projects"
-                className="mx-14  mb-28 mt-8 grid gap-11 auto-rows-fr 
-                grid-cols-1 md:grid-cols-2
-                xl:ml-[100px] xl:mr-[214px] xl:gap-14
-                2xl:ml-[200px] 2xl:mr-[340px] 2xl:mt-12   
-            ">
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-                <ProjectCard/>
-            </main>
+            <div className="flex-grow">
+                <main 
+                    id="main-content"
+                    aria-labelledby="projects"
+                    className="mx-14 mb-28 mt-8 grid gap-11 auto-rows-fr 
+                    grid-cols-1 md:grid-cols-2
+                    xl:ml-[100px] xl:mr-[214px] xl:gap-14
+                    2xl:ml-[200px] 2xl:mr-[340px] 2xl:mt-12   
+                ">
+                    <ProjectCard title="sebastianflores.com" description="My personal portfolio used to showcase my work as a software engineer." href="" technologies={["Next.js", "Tailwind CSS", "Vercel"]}/>
+                    <ProjectCard title="Golf Report" description="A golf shot analyzer that provides an interactive visual rendering of each shot, helping users gain deeper insights into their performance." href="https://golf-report.vercel.app" technologies={["Node.js", "Next.js", "CSS", "D3.js"]}/>
+                </main>
+            </div>
             <Footer screen="projects"/>
         </div>
     )
