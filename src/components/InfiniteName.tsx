@@ -26,7 +26,7 @@ export default function InfinateName () {
     const translateX = useMotionTemplate`-${percentage}px`;
 
     return (
-        <div className="h-auto ml-5 mr-6 font-impact text-[#DFDFDF] text-[235px] leading-[210px] tracking-[-5px] overflow-hidden">
+        <div className="h-auto ml-5 mr-6 font-impact select-none text-[#DFDFDF] text-[235px] leading-[210px] tracking-[-5px] overflow-hidden">
             <motion.div style={{translateX}}>
                 <span ref={textRef}>
                     SEBASTIAN <br/>FLORES

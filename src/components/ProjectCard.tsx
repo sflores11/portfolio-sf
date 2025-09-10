@@ -35,7 +35,7 @@ export default function ProjectCard ({
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                     </svg>            
                 </div>
-                <p className="text-lg lg:text-xl xl:text-2xl pt-3 text-[#B2B2B2] flex-grow">
+                <p className="text-lg lg:text-xl xl:text-2xl lg:pt-2 text-[#B2B2B2] flex-grow">
                     {description}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-3">

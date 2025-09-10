@@ -46,12 +46,12 @@ export default function Projects() {
                 <main 
                     id="main-content"
                     aria-labelledby="projects"
-                    className="mx-14 mb-28 mt-8 grid gap-11 auto-rows-fr 
+                    className="mx-8 sm:mx-14 mb-28 mt-8 grid gap-8 lg:gap-10 xl:gap-14
                     grid-cols-1 md:grid-cols-2
-                    xl:ml-[100px] xl:mr-[214px] xl:gap-14
+                    xl:ml-[100px] xl:mr-[214px] 
                     2xl:ml-[200px] 2xl:mr-[340px] 2xl:mt-12   
                 ">
-                    <ProjectCard title="sebastianflores.com" description="My personal portfolio used to showcase my work as a software engineer." href="" technologies={["Next.js", "Tailwind CSS", "Vercel"]}/>
+                    <ProjectCard title="My Portfolio" description="My personal portfolio used to showcase my work as a software engineer." href="" technologies={["Next.js", "Tailwind CSS", "Vercel"]}/>
                     <ProjectCard title="Golf Report" description="A golf shot analyzer that provides an interactive visual rendering of each shot, helping users gain deeper insights into their performance." href="https://golf-report.vercel.app" technologies={["Node.js", "Next.js", "CSS", "D3.js"]}/>
                 </main>
             </div>
