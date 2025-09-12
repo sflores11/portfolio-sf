@@ -16,7 +16,7 @@ export default function ProjectCard ({
             <div className="
                 group select-none bg-[#263349] 
                 hover:border-[#83A9E6] hover:shadow-[0px_4px_9px_rgba(0,0,0,0.55)] hover:bg-[#3E5375] 
-                border-[#374A69] border-2 rounded-[50px] pb-9 pt-[30px] px-9 flex min-h-60 
+                border-[#374A69] border-2 rounded-[50px] pb-9 pt-[30px] px-9 flex min-h-60 md:h-full
                 lg:min-h-80 
                 flex-col
             ">

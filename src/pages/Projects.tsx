@@ -47,7 +47,7 @@ export default function Projects() {
                     id="main-content"
                     aria-labelledby="projects"
                     className="mx-8 sm:mx-14 mb-28 mt-8 grid gap-8 lg:gap-10 xl:gap-14
-                    grid-cols-1 md:grid-cols-2
+                    grid-cols-1 md:grid-cols-2 md:items-stretch
                     xl:ml-[100px] xl:mr-[214px] 
                     2xl:ml-[200px] 2xl:mr-[340px] 2xl:mt-12   
                 ">
