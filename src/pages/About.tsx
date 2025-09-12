@@ -40,7 +40,7 @@ export default function About() {
 
                 {/* mobile */}
                 <section className="sm:hidden">
-                    <div className="max-w-96 ml-16 my-16 mr-8">
+                    <div className="max-w-96 mx-10 mt-4 mb-10">
                         <p className="font-arial text-[#DFDFDF] text-2xl leading-snug">
                             I'm fueled by my desire to create lasting solutions that go beyond an immediate fix. This has allowed me to balance business expectations and complex technological requirements to create practical and impactful solutions.
                             I enjoy building end-to-end full-stack solutions, from database design and backend APIs to intuitive front-end user experiences.
