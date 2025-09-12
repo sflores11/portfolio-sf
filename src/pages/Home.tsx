@@ -17,7 +17,7 @@ export default function Home () {
                     </nav>
                 </header>
                 <h1 className="sr-only">Sebastian Flores - Software Engineer</h1>
-                    <p className="font-arial text-[#DFDFDF] mb-8 text-[28px] leading-[30px] text-center">
+                    <p className="font-arial text-[#DFDFDF] mb-8 text-2xl leading-[27px] text-center">
                         software engineer<br /> hopeful architect <br/>aspiring photographer<br/>
                         <Link to="/projects" className="underline">view my projects</Link>
                     </p>
