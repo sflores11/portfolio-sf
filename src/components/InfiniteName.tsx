@@ -1,18 +1,37 @@
 import { motion, useMotionValue, useAnimationFrame, useTransform, useMotionTemplate } from "motion/react"
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 export default function InfinateName () {
     const textRef = useRef<HTMLDivElement>(null);
     const [itemWidth, setItemWidth] = useState(0);
 
-    useLayoutEffect(() => {
+    const recalcWidth = () => {
         if (textRef.current) {
-          const width = textRef.current.offsetWidth;
-          setItemWidth(width + 20);
-        }
+            const width = textRef.current.offsetWidth;
+            setItemWidth(width + 20);
+          }
+    }
+
+    useLayoutEffect(() => {
+        recalcWidth();
     }, []);
 
     const clock = useMotionValue(Date.now());
+
+    useEffect(() => {
+        const handleResize = () => {
+          recalcWidth();
+          clock.set(Date.now());
+        };
+    
+        window.addEventListener("resize", handleResize);
+        window.addEventListener("orientationchange", handleResize);
+    
+        return () => {
+          window.removeEventListener("resize", handleResize);
+          window.removeEventListener("orientationchange", handleResize);
+        };
+    }, [clock]);
 
     useAnimationFrame((t, dt) => {
         clock.set(clock.get() + dt * 1);
