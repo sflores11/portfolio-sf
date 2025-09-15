@@ -9,7 +9,10 @@ module.exports = {
         impact: ['Impact', 'sans-serif'],
         Impacted: ['Impacted', 'sans-serif'],
         arial: ['Arial', 'sans-serif'],
-      }
+      },
+      minHeight: {
+        'screen-svh': '100svh',
+      },
     },
   },
   plugins: [],

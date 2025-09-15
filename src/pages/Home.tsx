@@ -9,7 +9,7 @@ export default function Home () {
 
     return (
         <>
-            <div className="flex h-[100svh] justify-between flex-col sm:hidden">
+            <div className="flex min-h-screen-svh justify-between flex-col sm:hidden">
                 {/* mobile */}
                 <header className="items-center ">
                     <nav className={`my-5 flex ${open ? 'justify-between' : 'justify-end'} items-center mx-8`} aria-label="Main Navigation">
@@ -27,7 +27,7 @@ export default function Home () {
 
             </div>
             {/* desktop */}
-            <div className="hidden landscape:sm:flex flex-col justify-between min-h-screen">
+            <div className="hidden landscape:sm:flex flex-col justify-between min-h-screen-svh">
                 <header className="App-header">
                     <h1 className="
                             font-impact select-none text-[#DFDFDF] 
@@ -51,7 +51,7 @@ export default function Home () {
             </div>
 
             {/* portrait */}
-            <div className="hidden sm:portrait:flex justify-between flex-col h-[100svh]">
+            <div className="hidden sm:portrait:flex justify-between flex-col min-h-screen-svh">
                 <div className="m-8 md:m-9 lg:m-10 xl:m-12">
                     <NavBar screen="home-portrait"/>
                 </div>

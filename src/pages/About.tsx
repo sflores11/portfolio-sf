@@ -7,7 +7,7 @@ export default function About() {
     const [open, setOpen] = useState(false);
     
     return (
-        <div className="relative min-h-screen min-w-screen flex flex-col">
+        <div className="relative min-h-screen-svh min-w-screen flex flex-col">
             <header className={`my-3 mx-8 flex justify-between items-center ${open ? 'my-5' : ''}`}>
                 <h1 className={`${open ? 'sr-only hidden': ''} font-impact select-none text-[#DFDFDF] leading-none text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[128px]`}>ABOUT
                 </h1>

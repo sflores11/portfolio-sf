@@ -8,7 +8,7 @@ export default function Projects() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="relative min-h-screen min-w-screen flex flex-col">
+        <div className="relative min-h-screen-svh min-w-screen flex flex-col">
             <header className={`my-3 mx-7 flex justify-between items-center ${open ? 'my-5' : ''}`}>
                 <NavBar screen="project"/>
                 <h1
