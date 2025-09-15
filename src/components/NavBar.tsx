@@ -10,15 +10,13 @@ export default function NavBar({
     let defaultNav; 
     if (screen === 'home') {
         defaultNav = "text-lg flex space-x-8 max-sm:hidden sm:text-xl sm:space-x-8 md:text-2xl md:space-x-12 lg:text-[28px] lg:space-x-16 xl:text-[30px] xl:space-x-24 2xl:text-[34px] 2xl:space-x-40";
-    } else if (screen === 'home-portrait') {
-        defaultNav = "hidden sm:flex sm:text-xl sm:space-x-10  md:text-2xl md:space-x-12 lg:text-4xl lg:space-x-16 xl:text-[42px] xl:space-x-24 2xl:text-5xl 2xl:space-x-32";
     } else {
         defaultNav = "hidden sm:flex sm:text-lg sm:space-x-8  md:text-xl md:space-x-12 lg:text-2xl lg:space-x-16 xl:text-3xl xl:space-x-24 2xl:text-4xl 2xl:space-x-32";
     }
 
     return (
         <nav className={`group
-            font-arial text-[#DFDFDF] ${defaultNav}`}    
+            font-arial text-[#DFDFDF] ${defaultNav} sm:portrait:flex sm:portrait:text-xl sm:portrait:space-x-10  md:portrait:text-2xl md:portrait:space-x-12 lg:portrait:text-4xl lg:portrait:space-x-16 xl:portrait:text-[42px] xl:portrait:space-x-20 2xl:portrait:text-5xl 2xl:portrait:space-x-24`}    
         >
             <Link className="transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100" to="/">home</Link>
             <Link className="transition-opacity duration-200 group-hover:opacity-50 hover:!opacity-100" to="/projects">projects</Link>

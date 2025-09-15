@@ -52,8 +52,8 @@ export default function Home () {
 
             {/* portrait */}
             <div className="hidden sm:portrait:flex justify-between flex-col min-h-screen-svh">
-                <div className="m-8 md:m-9 lg:m-10 xl:m-12">
-                    <NavBar screen="home-portrait"/>
+                <div className="mx-7 my-[22px] md:my-[26px] lg:my-7 xl:my-11 2xl:my-14">
+                    <NavBar screen="portrait"/>
                 </div>
 
                 <p className="font-arial text-[#DFDFDF] mb-8 sm:text-2xl md:text-3xl lg:text-5xl xl:text-[56px] leading-[30px] lg:leading-[52px] xl:leading-[62px] text-center">
